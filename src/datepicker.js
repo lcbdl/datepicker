@@ -1,4 +1,4 @@
-const locale = SDP_LANG ?? 'en';
+const locale = SDP_LANG ?? "en";
 const messages = {
   en: {
     chooseDate: "Choose Date",
@@ -68,12 +68,12 @@ const messages = {
       "novembre",
       "décembre",
     ],
-    instructionCursorKeys: "Les touches du curseur permettent la navigation des dates",
+    instructionCursorKeys:
+      "Les touches du curseur permettent la navigation des dates",
   },
 };
 
 const templateHtml = `
-<style>@import url("../../fontawesome6.6.0/css/all.min.css");</style>
 <style>
     .datepicker {
     position: relative;
@@ -319,20 +319,30 @@ const templateHtml = `
 <div class="datepicker">
     <slot class="date" name="input-slot"></slot>
 
-    <div class="datepicker-dialog" role="dialog" aria-modal="true" aria-label="${messages[locale].chooseDate}">
+    <div class="datepicker-dialog" role="dialog" aria-modal="true" aria-label="${
+      messages[locale].chooseDate
+    }">
         <div class="header">
-            <button type="button" class="prev-year" aria-label="${messages[locale].prevYear}">
-                <span class="fas fa-angle-double-left fa-lg"></span>
+            <button type="button" class="prev-year" aria-label="${
+              messages[locale].prevYear
+            }">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 40 40"><path fill="currentColor" d="M12.5 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z M20.5 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path></svg>
             </button>
-            <button type="button" class="prev-month" aria-label="${messages[locale].prevMonth}">
-                <span class="fas fa-angle-left fa-lg"></span>
+            <button type="button" class="prev-month" aria-label="${
+              messages[locale].prevMonth
+            }">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 40 40"><path fill="currentColor" d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
             </button>
             <h2 id="id-grid-label" class="month-year" aria-live="polite">February 2020</h2>
-            <button type="button" class="next-month" aria-label="${messages[locale].nextMonth}">
-                <span class="fas fa-angle-right fa-lg"></span>
+            <button type="button" class="next-month" aria-label="${
+              messages[locale].nextMonth
+            }">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 40 40"><path fill="currentColor" d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
             </button>
-            <button type="button" class="next-year" aria-label="${messages[locale].nextYear}">
-                <span class="fas fa-angle-double-right fa-lg"></span>
+            <button type="button" class="next-year" aria-label="${
+              messages[locale].nextYear
+            }">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 40 40"><path fill="currentColor" d="M3.5 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z M11.5 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
             </button>
         </div>
 
@@ -340,34 +350,60 @@ const templateHtml = `
             <table class="dates" role="grid" aria-labelledby="id-grid-label">
                 <thead>
                     <tr>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[0]}" abbr="${messages[locale].dayLabels[0]}">${messages[locale].dayAbbreviations[0]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[0]
+                        }" abbr="${messages[locale].dayLabels[0]}">${
+  messages[locale].dayAbbreviations[0]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[1]}" abbr="${messages[locale].dayLabels[1]}">${messages[locale].dayAbbreviations[1]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[1]
+                        }" abbr="${messages[locale].dayLabels[1]}">${
+  messages[locale].dayAbbreviations[1]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[2]}" abbr="${messages[locale].dayLabels[2]}">${messages[locale].dayAbbreviations[2]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[2]
+                        }" abbr="${messages[locale].dayLabels[2]}">${
+  messages[locale].dayAbbreviations[2]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[3]}" abbr="${messages[locale].dayLabels[3]}">${messages[locale].dayAbbreviations[3]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[3]
+                        }" abbr="${messages[locale].dayLabels[3]}">${
+  messages[locale].dayAbbreviations[3]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[4]}" abbr="${messages[locale].dayLabels[4]}">${messages[locale].dayAbbreviations[4]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[4]
+                        }" abbr="${messages[locale].dayLabels[4]}">${
+  messages[locale].dayAbbreviations[4]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[5]}" abbr="${messages[locale].dayLabels[5]}">${messages[locale].dayAbbreviations[5]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[5]
+                        }" abbr="${messages[locale].dayLabels[5]}">${
+  messages[locale].dayAbbreviations[5]
+}
                         </th>
-                        <th scope="col" aria-label="${messages[locale].dayLabels[6]}" abbr="${messages[locale].dayLabels[6]}">${messages[locale].dayAbbreviations[6]}
+                        <th scope="col" aria-label="${
+                          messages[locale].dayLabels[6]
+                        }" abbr="${messages[locale].dayLabels[6]}">${
+  messages[locale].dayAbbreviations[6]
+}
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-                    
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
 
         <div class="dialog-ok-cancel-group">
-          <button class="dialog-button" value="ok">
-              ${messages[locale ?? 'en'].ok}
+          <button type="button" class="dialog-button" value="ok">
+              ${messages[locale ?? "en"].ok}
           </button>  
-          <button class="dialog-button" value="cancel">
-              ${messages[locale ?? 'en'].cancel}
+          <button type="button" class="dialog-button" value="cancel">
+              ${messages[locale ?? "en"].cancel}
           </button>
         </div>
         <div class="dialog-message" aria-live="polite"></div>
@@ -523,13 +559,14 @@ customElements.define(
       let dayOfWeek = firstDayOfMonth.getDay();
       firstDayOfMonth.setDate(firstDayOfMonth.getDate() - dayOfWeek);
 
-      const lastDayOfMonth = new Date(fd.getFullYear(), fd.getMonth()+1, 0);
+      const lastDayOfMonth = new Date(fd.getFullYear(), fd.getMonth() + 1, 0);
 
       const daysInMonth = lastDayOfMonth.getDate();
       const numOfDaysBefore = dayOfWeek;
       const numOfDaysAfter = 6 - lastDayOfMonth.getDay();
 
-      const totalNumOfDaysToDisplay = daysInMonth + numOfDaysBefore + numOfDaysAfter;
+      const totalNumOfDaysToDisplay =
+        daysInMonth + numOfDaysBefore + numOfDaysAfter;
       return totalNumOfDaysToDisplay;
     }
 
@@ -537,7 +574,9 @@ customElements.define(
       const fd = this.focusDay;
 
       this.monthYearNode.textContent =
-        messages[locale ?? 'en'].monthLabels[fd.getMonth()] + " " + fd.getFullYear();
+        messages[locale ?? "en"].monthLabels[fd.getMonth()] +
+        " " +
+        fd.getFullYear();
 
       let firstDayOfMonth = new Date(fd.getFullYear(), fd.getMonth(), 1);
       let dayOfWeek = firstDayOfMonth.getDay();
@@ -642,8 +681,10 @@ customElements.define(
         const day = this.getDayFromDataDateAttribute(dayNode);
 
         dayNode.tabIndex = -1;
+        dayNode.removeAttribute("aria-selected");
         if (this.isSameDay(day, this.focusDay)) {
           dayNode.tabIndex = 0;
+          dayNode.setAttribute("aria-selected", true);
           if (flag) {
             dayNode.focus();
           }
@@ -801,7 +842,11 @@ customElements.define(
       }
 
       this.textboxNode.value =
-        this.paddingZero(d.getMonth() + 1, 2) + "/" + this.paddingZero(d.getDate(), 2) + "/" + d.getFullYear();
+        this.paddingZero(d.getMonth() + 1, 2) +
+        "/" +
+        this.paddingZero(d.getDate(), 2) +
+        "/" +
+        d.getFullYear();
       this.setDateForButtonLabel();
     }
 
@@ -934,7 +979,7 @@ customElements.define(
           this.close();
           flag = true;
           break;
-          align
+          align;
           break;
       }
 
@@ -1200,7 +1245,7 @@ customElements.define(
     }
 
     handleDayFocus() {
-      this.setMessage(messages[locale ?? 'en'].instructionCursorKeys);
+      this.setMessage(messages[locale ?? "en"].instructionCursorKeys);
     }
 
     handleButtonKeydown(event) {
@@ -1226,7 +1271,7 @@ customElements.define(
     }
 
     handleBackgroundMouseUp(event) {
-      if (event.target.tagName !== 'DATE-PICKER' && this.isOpen()) {
+      if (event.target.tagName !== "DATE-PICKER" && this.isOpen()) {
         this.close(false);
         event.stopPropagation();
         event.preventDefault();

@@ -2,6 +2,10 @@
 
 This Datepicker is a custom web component, which was written with HTML, JavaScript, and CSS. You can use it in any html page.
 
+- It is fully accessible
+- It supports multiple language
+- It can be used in any HTML page
+
 ## Reference
 
 - [W3C Web Accessibility Initiative](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/)

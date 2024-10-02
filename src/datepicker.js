@@ -1,4 +1,4 @@
-const locale = SDP_LANG ?? "en";
+const locale = window.navigator.language.startsWith("fr") ? "fr" : "en";
 const messages = {
   en: {
     chooseDate: "Choose Date",

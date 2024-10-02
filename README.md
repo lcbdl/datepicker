@@ -1,4 +1,4 @@
-# Datepicker &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
+# Multiple-Language Accessible Datepicker
 
 This Datepicker is a custom web component, which was written with HTML, JavaScript, and CSS. You can use it in any html page.
 
